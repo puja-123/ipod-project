@@ -201,11 +201,11 @@ class App extends React.Component
 
     if (status === true) {
       audio.play();
-      this.timer();
+      this.hanldeTimer();
     }
     else {
       audio.pause();
-      this.timer();
+      this.hanldeTimer();
     }
 
   }
@@ -234,10 +234,10 @@ class App extends React.Component
 
     }, 2250);
   }
-
+// timer
   // -------------------------------------------------------------
   // music timer function
-  timer = () => {
+  hanldeTimer = () => {
     this.setBar();
     var timer = document.getElementById('song_id');
     var timePlayed = parseInt(timer.getAttribute("data"));
