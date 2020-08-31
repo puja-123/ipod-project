@@ -59,18 +59,19 @@ function MainList(props)
                             <span><img src={arrowright} alt="right"></img></span>
                         </div>
                     </div>
-
                 </div>
                 <div>
                     <div className={`${coverflow || music ? "coverflow" : 'rm'}`} >
                         <img src={OnMyWay} alt="song"></img>
                     </div>
+                    {/* ----------------Game--------------------- */}
                     <div className={`${games ? "games bg" : 'rm'}`} >
                         <img src={icon} alt=""></img>
                         <div>
                             games
                         </div>
                     </div>
+                    {/* --------------Setting---------------- */}
                     <div className={`${settings ? "bg settings" : 'rm'}`} >
                         <img src={rIcon} alt=""></img>
                         <div>iPod.js</div>
